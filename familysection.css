@@ -1,0 +1,25 @@
+.family-container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+  }
+  
+  .family-text {
+    flex: 1;
+    font-size: 25px;
+  }
+  
+  .family-photo img {
+   width: 300px;
+   height: 300px;
+    border-radius: 10px;
+  }
+  
+  /* Dark Mode adjustments */
+  body.dark-mode h3{
+    color: #f4f4f4;
+  }
+  
+  body.light-mode h3{
+    color: black;
+  }

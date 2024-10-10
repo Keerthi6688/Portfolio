@@ -1,0 +1,74 @@
+.home-content {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+/* Image Box styling */
+.image-box {
+    width: 400px;  
+    height: 400px; 
+    /* border: 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures the image doesn’t spill out */
+  }
+  
+
+  .profile-image {
+    /* max-width: 300px;
+    border-radius: 50%; */
+    width: 60%;
+    border-radius: 50%;
+    object-fit: cover;  /* Stretches the image to fit the box exactly */
+  }
+  
+  /* Styling for the name */
+.animated-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    animation: fadeIn 3s ease-in-out;
+    margin-right: 50px; /* Spacing between name and image */
+  }
+  
+  /* Styling for the intro text */
+  .intro-text {
+    font-size: 24px;
+    color: #555;
+    margin-top: 10px;
+    animation: slideIn 2s ease-in-out;
+  }
+
+  /* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes for the slide-in animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

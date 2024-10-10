@@ -1,0 +1,73 @@
+.skills-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .skills-grid {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of the page */
+  }
+  
+  .skill-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%; /* Skill bars take 80% of the page width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 10px;
+    width: 100%; /* Full width of skill item */
+  }
+  
+  .progress {
+    background-color: #3498db;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 2s ease-in-out;
+  }
+  
+  .skill-item:hover .progress {
+    background-color: #36a420; /* Darker shade on hover */
+  }
+  
+  @media (min-width: 768px) {
+    .skills-grid {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .skill-item {
+      width: 40%; /* Each skill item will take 40% of the width on larger screens */
+    }
+  }
+
+  /* Dark Mode adjustments */
+  body.dark-mode h1,h2{
+    color: #f4f4f4;
+  }
+  
+  body.dark-mode h3{
+    color: black;
+  }
+  
+  body.light-mode h1,h2,h3{
+    color: black;
+  }
